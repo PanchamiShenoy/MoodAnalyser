@@ -8,18 +8,18 @@ public class MoodAnalyserTest {
 	 */
 	@Test
 	public void moodIsSad() {
-		MoodAnalyser moodAnalyser = new MoodAnalyser();
-		String mood = moodAnalyser.analyseMood("I am sad");
+		MoodAnalyser moodAnalyser = new MoodAnalyser("I am in sad mood");
+		String mood = moodAnalyser.analyseMood();
 		Assert.assertEquals("SAD", mood);
 	}
 
 	/**
-	 * test case to check for sad mood.
+	 * test case to check for happy mood.
 	 */
 	@Test
 	public void moodIsHappy() {
-		MoodAnalyser moodAnalyser = new MoodAnalyser();
-		String mood = moodAnalyser.analyseMood("I am having fun");
+		MoodAnalyser moodAnalyser = new MoodAnalyser("I am in happy mood");
+		String mood = moodAnalyser.analyseMood();
 		Assert.assertEquals("HAPPY", mood);
 	}
 
